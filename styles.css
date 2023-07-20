@@ -9,6 +9,7 @@
     --grey: #F9FAFB;
     --white: #FFFFFF;
     --green: #596D48;
+    --red: rgb(144, 0, 0);
 }
 
 button,
@@ -31,7 +32,9 @@ main {
 /*LEFT SIDE OF PAGE*/
 .page-left {
     background-image: url("./images/halie-west-25xggax4bSA-unsplash.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -57,10 +60,16 @@ main {
 
 .page-right {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     width: var(--form-length);
+    gap: 6vh;
+    padding-left: 6vh;
 }
 
+#statement {
+    padding: 2vh 0vw 2vh 0vw;
+}
 
 /*GREY NEEDS TO FADE INTO FORM SLIGHTLY*/
 .form {
@@ -93,3 +102,5 @@ form {
     border-radius: 6px;
     padding: 10px 20px;
 }
+
+/*NEED BOXSHADOW AT BOTTOM OF BUTTON*/
