@@ -2,10 +2,15 @@
     padding: 0px;
     margin: 0px;
     text-decoration: none;
+
+    /*DEFINE VARIABLES FOR LENGTH*/
+    --form-length: 65vw;
+    --photo-length: calc(100vw - var(--form-length))
 }
 
 main {
     display: flex;
+    background-color: rgb(205, 205, 205);
 }
 
 /*LEFT SIDE OF PAGE*/
@@ -15,9 +20,11 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 40vw;
+    width: var(--photo-length);
     height: 100vh;
 }
+
+/*NEED TO LAYER ODIN LOGO/IMAGE SIDEBAR ONTO PHOTO*/
 
 #credits {
     color: white;
@@ -31,14 +38,27 @@ main {
 
 /*RIGHT SIDE OF PAGE*/
 
+
+
 .page-right {
     display: flex;
     flex-direction: column;
+    width: var(--form-length);
+}
+
+
+/*GREY NEEDS TO FADE INTO FORM SLIGHTLY*/
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(236, 236, 236);
 }
 
 form {
     display: flex;
 }
+
+/*NEED BOXSHADOW AT BOTTOM OF FORM*/
 
 .confirmation {
     display: flex;
