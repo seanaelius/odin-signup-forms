@@ -1,0 +1,27 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+}
+
+/*LEFT SIDE OF PAGE*/
+.page-left {
+    background-image: url("./images/halie-west-25xggax4bSA-unsplash.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#credits {
+    color: white;
+}
+
+#credits a {
+    text-decoration: underline;
+}
+
+/*RIGHT SIDE OF PAGE*/
