@@ -5,12 +5,27 @@
 
     /*DEFINE VARIABLES FOR LENGTH*/
     --form-length: 65vw;
-    --photo-length: calc(100vw - var(--form-length))
+    --photo-length: calc(100vw - var(--form-length));
+    --grey: #F9FAFB;
+    --white: #FFFFFF;
+    --green: #596D48;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
 }
 
 main {
     display: flex;
-    background-color: rgb(205, 205, 205);
+    background-color: var(--grey);
 }
 
 /*LEFT SIDE OF PAGE*/
@@ -51,7 +66,7 @@ main {
 .form {
     display: flex;
     flex-direction: column;
-    background-color: rgb(236, 236, 236);
+    background-color: var(--white);
 }
 
 form {
@@ -63,4 +78,18 @@ form {
 .confirmation {
     display: flex;
     flex-direction: column;
+}
+
+.confirmation a {
+    color: var(--green);
+}
+
+.confirmation button {
+    background-color: var(--green);
+    color: white;
+    max-width: 200px;
+    min-width: 40px;
+    /*NEED TO CHANGE RELATIVE TO VW AND VH*/
+    border-radius: 6px;
+    padding: 10px 20px;
 }
