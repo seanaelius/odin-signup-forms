@@ -11,6 +11,13 @@
     --white: #FFFFFF;
     --green: #596D48;
     --red: rgb(144, 0, 0);
+    font-family: arial;
+
+}
+
+@font-face {
+    font-family: odin-font;
+    src: url(./Norse-Bold.otf);
 }
 
 button,
@@ -41,9 +48,29 @@ main {
     justify-content: flex-end;
     width: var(--photo-length);
     height: 100vh;
+    position: relative;
 }
 
-/*NEED TO LAYER ODIN LOGO/IMAGE SIDEBAR ONTO PHOTO*/
+#odin {
+    /*DIFFERENT FONT FOR ODIN LOGO*/
+    font-family: odin-font;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 8vh;
+    position: absolute;
+    width: var(--photo-length);
+    top: 30vh;
+    padding: 2vh 0vw;
+
+}
+
+#odin img {
+    width: 10vh;
+    height: 10vh;
+}
 
 #credits {
     color: white;
@@ -97,7 +124,7 @@ form {
 
 .form label {
     text-transform: uppercase;
-    font-size: 18px
+    font-size: 16px
 }
 
 .form input {
@@ -105,6 +132,7 @@ form {
     border-radius: 4px;
     width: 20vw;
     height: 2.4vh;
+    padding: 4px 8px;
 }
 
 .input {
