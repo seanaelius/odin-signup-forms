@@ -12,16 +12,14 @@
 
 <body>
     <main>
+        <!--LEFT SIDE OF PAGE-->
         <div class="page-left">
-            <!--NEED TO POSITION ODIN NEAR TOP (IF PAGE IN QUARTERS, SECOND QUARTER)-->
-            <!--<img id="odin" src="./images/odin-lined.png" alt="odin logo">-->
-            <!--BACKGROUND IMAGE LINK: https://unsplash.com/photos/25xggax4bSA-->
-            <!--POSITION SPAN AT THE BOTTOM-->
+            <!--REFERENCE BACKGROUND IMAGE LINK: https://unsplash.com/photos/25xggax4bSA-->
             <div id="odin"><img src="./images/odin-lined.png" alt="">ODIN</div>
             <span id="credits">Photo by&nbsp;<a href="https://unsplash.com/@haliewestphoto" id="credits">Halie
                     West</a>&nbsp;on&nbsp;<a href="https://unsplash.com/" id="credits">Unsplash</a></span>
         </div>
-
+        <!--RIGHT SIDE OF PAGE-->
         <div class="page-right">
             <div class="intro">
                 <p>This is not a real online service! You know you need something <br>
@@ -30,21 +28,29 @@
 
                 <p id="statement">You <em>know</em> you want to.</p>
             </div>
+            <!--FORM-->
             <div class="form">
                 <strong>Let's do this!</strong>
                 <form action="#" method="get">
+                    <!--NEED TO INCORPORATE VALIDATIONS AND SAME PASSWORD IN SCRIPT.JS-->
                     <div class="form-right-side">
-                        <div class="input"><label for="">First Name</label><input type="text"></div>
-                        <div class="input"><label for="">Email</label><input type="text"></div>
-                        <div class="input"><label for="">Password</label><input type="text"></div>
+                        <div class="input"><label for="first_name">First Name</label><input type="text"
+                                name="first_name"></div>
+                        <div class="input"><label for="user_email">Email</label><input type="email" name="email"></div>
+                        <div class="input"><label for="password">Password</label><input type="password"
+                                id="user_password" name="password"></div>
                     </div>
                     <div class="form-left-side">
-                        <div class="input"><label for="">Last Name</label><input type="text"></div>
-                        <div class="input"><label for="">Phone Number</label><input type="text"></div>
-                        <div class="input"><label for="">Confirm Password</label><input type="text"></div>
+                        <div class="input"><label for="last_name">Last Name</label><input type="text"></div>
+                        <div class="input"><label for="phone_number">Phone Number</label><input type="number"
+                                name="phone_number"></div>
+                        <div class="input"><label for="password">Confirm Password</label><input type="password"
+                                id="user_password" name="password">
+                        </div>
                     </div>
                 </form>
             </div>
+            <!--CONFIRMATION (LOGIN AND SIGNUP)-->
             <div class="confirmation">
                 <button type="submit">Create Account</button>
                 <span id="login">Already have an account? <a href="#">Log in</a></span>
